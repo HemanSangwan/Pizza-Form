@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Royal Pizza Order Form</title>
+</head>
+<body>
+  <header>
+    <h1>Royal Pizza Order Form</h1>
+  </header>
+  <main>
+    <form action="confirmation.html" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pizza Details</legend>
+        <label for="number">Number of Pizzas:</label>
+        <input type="number" id="number" name="number" min="1" max="10" required>
+
+        <label for="size">Size:</label>
+        <select id="size" name="size" required>
+          <option value="">Select size</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+
+        <label for="shape">Shape:</label>
+        <input type="radio" id="round" name="shape" value="round" required>
+        <label for="round">Round</label>
+        <input type="radio" id="square" name="shape" value="square" required>
+        <label for="square">Square</label>
+
+        <label for="toppings">Toppings:</label>
+        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+        <label for="mushrooms">Mushrooms</label>
+        <input type="checkbox" id="olives" name="toppings" value="olives">
+        <label for="olives">Olives</label>
+
+        <label for="crust">Crust Type:</label>
+        <input type="radio" id="deep-dish" name="crust" value="deep-dish" required>
+        <label for="deep-dish">Deep Dish</label>
+        <input type="radio" id="thin-crust" name="crust" value="thin-crust" required>
+        <label for="thin-crust">Thin Crust</label>
+
+        <label for="delivery-method">Delivery Method:</label>
+        <input type="radio" id="take-out" name="delivery-method" value="take-out" required>
+        <label for="take-out">Take Out</label>
+        <input type="radio" id="delivery" name="delivery-method" value="delivery" required>
+        <label for="delivery">Delivery</label>
+        <input type="radio" id="eat-in" name="delivery-method" value="eat-in" required>
+        <label for="eat-in">Eat In</label>
+      </fieldset>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </main>
+  <footer>
+    <p>Image source: <a href="https://images.alphacoders.com/730/730480.jpg">example.com</a></p>
+    <img src="https://images.alphacoders.com/730/730480.jpg" alt="Delicious pizza">
+  </footer>
+</body>
+</html>
